@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"github.com/creativelikeadog/revel-mgo/app"
-	"github.com/creativelikeadog/revel-mgo/sample/app/models"
+	"github.com/Tsuguya/revelmgo/app"
+	"github.com/Tsuguya/revelmgo/sample/app/models"
 	"github.com/revel/revel"
 )
 

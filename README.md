@@ -9,22 +9,22 @@ mgo module for revel framework
 
 Settings can be configured via the following directives in app.conf.
 
-#### modules.revmgo
+#### modules.mgo
   
-module.revmgo=github.com/creativelikeadog/revmgo
+module.mgo=github.com/Tsuguya/revmgo
 
 Please review the documentation at [Revel - Modules - Overview](http://revel.github.io/manual/modules.html) for more information
 
-#### revmgo.host
+#### mgo.host
 
 Please review the documentation at [mgo.Session.Dial()](http://godoc.org/labix.org/v2/mgo#Dial) for information on the syntax and valid settings.
 
-#### revmgo.method
+#### mgo.method
 
 This can be one of 'clone', 'copy', 'new'. See [mgo.Session.New()](http://godoc.org/labix.org/v2/mgo#Session.New) for more information.
 
 
-#### revmgo.database
+#### mgo.database
 
 The name of the default database you want to use
 
@@ -35,15 +35,15 @@ MongoController.
 
 Add the following import line in source files that will embed MongoController.
 
-     "github.com/creativelikeadog/revmgo/app"
+     "github.com/Tsuguya/revmgo/app"
 
 Embed the MongoController on your custom controller;
 
     type Application struct {
-  		*revel.Controller
-      revmgo.MongoController
-  		// Other fields
-  	}
+        *revel.Controller
+        revmgo.MongoController
+        // Other fields
+    }
 
 
 Your controller will now have a MongoSession variable of type *mgo.Session and a Database variable of type *mgo.Database. Use this
@@ -51,7 +51,7 @@ to query your mongo datastore.
 
 ### Running sample
 
-revel run github.com/creativelikeadog/revmgo/sample
+revel run github.com/Tsuguya/revmgo/sample
 
 ### See Also
 
